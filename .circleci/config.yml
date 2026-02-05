@@ -22,4 +22,4 @@ jobs:
 workflows:
   test-workflow:
     jobs:
-      - run-sedstart-local-mac
+      - run-sedstart-local-windows
