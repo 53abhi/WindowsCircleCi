@@ -5,19 +5,18 @@ orbs:
  
 jobs:
     run-sedstart-local-mac:
-    macos:
-      xcode: 16.4.0
-      resource_class: 'm4pro.medium'
-    steps:
-      - checkout
-      - sedstart/runlocal:
-          api_key: SEDSTART_API_KEY
-          project_id: 418
-          test_id: 1937
-          profile_id: 848
-          environment: "QA"
-          browser: "webkit"
-          environment: "QA"
+     macos:
+       xcode: 16.4.0
+       resource_class: 'm4pro.medium'
+     steps:
+       - checkout
+       - sedstart/runlocal:
+           api_key: SEDSTART_API_KEY
+           project_id: 364
+           test_id: 1629
+           profile_id: 616
+           environment: "QA"
+           browser: "webkit"
  
 workflows:
   test-workflow:
