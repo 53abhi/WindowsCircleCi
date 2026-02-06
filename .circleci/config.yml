@@ -1,8 +1,8 @@
 version: 2.1
-
+ 
 orbs:
   sedstart: sedstart/cicd@dev:1
-
+ 
 jobs:
    run-sedstart-local-windows:
     resource_class: 'windows.medium'
@@ -14,11 +14,11 @@ jobs:
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
           project_id: 418
-          project_id: 1937
+          suite_id: 387
           profile_id: 848
           browser: "chrome"
           environment: "QA"
-
+ 
 workflows:
   test-workflow:
     jobs:
