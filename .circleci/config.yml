@@ -4,7 +4,7 @@ orbs:
   sedstart: sedstart/cicd@dev:1
 
 jobs:
-   run-sedstart-local-windows:
+  run-sedstart-local-windows:
     resource_class: 'windows.medium'
     machine:
       image: "windows-server-2022-gui:current"
@@ -12,10 +12,10 @@ jobs:
     steps:
       - checkout
       - sedstart/runlocal:
-          api_key: SEDSTART_API_KEY
-          project_id: 398
-          test_id: 2211
-          profile_id: 900
+          api_key: SEDSTART_API_KEY_A
+          project_id: 418
+          test_id: 1974
+          profile_id: chrome
           browser: "chrome"
           environment: "QA"
 
