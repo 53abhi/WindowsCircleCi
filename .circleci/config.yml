@@ -15,7 +15,7 @@ jobs:
           api_key: SEDSTART_API_KEY
           project_id: 418
           test_id: 2170
-          profile_id: 900
+          profile_id: 848
           browser: "chrome"
           environment: "QA"
 
