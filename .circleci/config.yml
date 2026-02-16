@@ -10,10 +10,10 @@ jobs:
     steps:
       - checkout
       - sedstart/runlocal:
-          api_key: SEDSTART_API_KEY
+          api_key: INVALID_KEY
           project_id: 418
           test_id: 1974
-          profile_id: 900
+          profile_id: 848
           browser: "chrome"
           environment: "QA"
 workflows:
