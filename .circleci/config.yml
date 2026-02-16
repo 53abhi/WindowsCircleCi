@@ -3,20 +3,20 @@ orbs:
   cicd: sedstart/cicd@dev:1
 
 jobs:
-  invalid-profile-418:
+  invalid-api-key:
     docker:
       - image: cimg/node:25.2.1
     steps:
       - cicd/runcloud:
-          api_key: SEDSTART_API_KEY
+          api_key: INVALID_KEY
           project_id: 418
           test_id: 1974
-          profile_id: 9999
+          profile_id: 848
           browser: chrome
           headless: true
-          environment: default.env
+          environment: QA
 
 workflows:
-  invalid-profile-418-workflow:
+  invalid-api-key-workflow:
     jobs:
-      - invalid-profile-418
+      - invalid-api-key
