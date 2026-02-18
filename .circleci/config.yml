@@ -8,9 +8,9 @@ jobs:
     steps:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
-          project_id: 673
-          test_id: 6163
-          profile_id: 
+          project_id:
+          test_id:
+          profile_id:
           browser: chrome
           headless: true
 workflows:
