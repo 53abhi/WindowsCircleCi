@@ -9,7 +9,7 @@ jobs:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
           project_id: 673
-          test_id: 6163
+          suite_id: 616
           profile_id: 1141
           browser: chrome
           headless: true
