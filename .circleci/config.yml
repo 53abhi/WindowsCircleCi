@@ -1,24 +1,19 @@
 version: 2.1
- 
 orbs:
-  sedstart: sedstart/cicd@dev:1
- 
+  cicd: sedstart/cicd@dev:1
 jobs:
-   run-sedstart-local-windows:
-    resource_class: 'windows.medium'
-    machine:
-      image: "windows-server-2022-gui:current"
-      shell: "powershell.exe -ExecutionPolicy Bypass"
+  test:
+    docker:
+      - image: cimg/node:25.2.1
     steps:
-      - checkout
-      - sedstart/runlocal:
-          api_key: SEDSTART_API_KEY
+      - cicd/runlocal:    
+          api_key: SEDSTART_API_KEY      
           project_id: 673
           test_id: 6163
           profile_id: 1141
-          browser: "edge"
- 
+          browser: chrome
+          headless: true
 workflows:
   test-workflow:
     jobs:
-      - run-sedstart-local-windows
+      - test
