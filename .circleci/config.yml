@@ -8,7 +8,7 @@ jobs:
     steps:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
-          project_id: 000
+          project_id: 
           suite_id: 616
           profile_id: 1141
           browser: chrome
