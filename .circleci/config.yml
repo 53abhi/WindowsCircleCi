@@ -12,9 +12,9 @@ jobs:
       - checkout
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
-          project_id: 000
+          project_id: 418
           test_id: 2225
-          profile_id: 848
+          profile_id: 
           environment: "QA"
           headless: true
           browser: "webkit"
