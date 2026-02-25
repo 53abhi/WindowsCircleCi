@@ -9,7 +9,7 @@ jobs:
     steps:
       - cicd/runcloud:    
           api_key: SEDSTART_API_KEY     
-          project_id: 
+          project_id: 000
           test_id: 2225
           suite_id: 421
           profile_id: 848
