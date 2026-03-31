@@ -13,12 +13,11 @@ jobs:
       - checkout
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
-          project_id: 418
-          test_id: 1974
-          profile_id: 848
+          project_id: 612
+          test_id: 4905
+          profile_id: 1306
           browser: "msedge"
           headless: true
-          environment: "QA"
 
 workflows:
   test-workflow:
