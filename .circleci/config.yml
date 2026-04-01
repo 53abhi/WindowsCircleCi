@@ -9,10 +9,10 @@ jobs:
     steps:
       - cicd/runcloud:    
           api_key: SEDSTART_API_KEY     
-          project_id: 612
+          project_id: 613
           test_id: 4905
           profile_id: 1306
-          browser: "msedge"
+          browser: "chrome"
           headless: true
 workflows:
   test-workflow:
