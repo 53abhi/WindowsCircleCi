@@ -13,7 +13,7 @@ jobs:
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
           project_id: 503
-          test_id: 2432
+          test_id: 2429
           browser: "webkit"
           environment: QA 
 workflows:
