@@ -1,23 +1,23 @@
 version: 2.1
-
+ 
 orbs:
   sedstart: sedstart/cicd@dev:1
-
+ 
 jobs:
   run-sedstart-local-mac:
     macos:
-      xcode: "16.4.0"
+      xcode: 16.4.0
     resource_class: m4pro.medium
     steps:
       - checkout
       - sedstart/runlocal:
-          api_key: ${SEDSTART_API_KEY}
+          api_key: SEDSTART_API_KEY
           project_id: 503
-          suite_id: 441
+          test_id: 2432
           profile_id: 1014
-          environment: "QA"
           browser: "webkit"
-
+          environment: QA
+ 
 workflows:
   test-workflow:
     jobs:
