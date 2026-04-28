@@ -9,8 +9,8 @@ jobs:
     steps:
       - cicd/runcloud:    
           api_key: SEDSTART_API_KEY     
-          project_id: 000
-          suite_id: 441
+          project_id: 503
+          test_id: 
           profile_id: 1007
           browser: chrome
           headless: true
