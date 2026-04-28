@@ -10,8 +10,8 @@ jobs:
       - cicd/runcloud:    
           api_key: SEDSTART_API_KEY     
           project_id: 503
-          test_id: 
-          profile_id: 1007
+          test_id: 2432
+          profile_id: 
           browser: chrome
           headless: true
           environment: QA
