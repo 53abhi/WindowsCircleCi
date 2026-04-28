@@ -15,7 +15,6 @@ jobs:
           api_key: SEDSTART_API_KEY
           project_id: 503
           suite_id: 441
-          profile_id: 1007
           browser: chrome
           environment: QA
  
