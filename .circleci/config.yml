@@ -11,8 +11,8 @@ jobs:
           api_key: SEDSTART_API_KEY     
           project_id: 503
           test_id: 2432
-          profile_id: 00
-          browser: chrome
+          profile_id: 1007
+          browser: 'msedge'
           headless: true
           environment: QA
 workflows:
