@@ -1,14 +1,15 @@
+This is working for 
 version: 2.1
-
+ 
 orbs:
-  sedstart: sedstart/cicd@:1
-
+  sedstart: sedstart/cicd@dev:1
+ 
 jobs:
-  run-sedstart-local-windows:
-    resource_class: windows.medium
+   run-sedstart-local-windows:
+    resource_class: 'windows.medium'
     machine:
       image: "windows-server-2022-gui:current"
-      shell: powershell.exe -ExecutionPolicy Bypass
+      shell: "powershell.exe -ExecutionPolicy Bypass"
     steps:
       - checkout
       - sedstart/runlocal:
@@ -16,9 +17,9 @@ jobs:
           project_id: 503
           suite_id: 441
           profile_id: 1007
-          browser: "chrome"
-          environment: "QA"
-
+          browser: chrome
+          environment: QA
+ 
 workflows:
   test-workflow:
     jobs:
