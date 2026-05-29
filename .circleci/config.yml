@@ -13,6 +13,7 @@ jobs:
           test_id: 3436
           browser: chrome
           headless: true
+          environment: "QA"
 workflows:
   test-workflow:
     jobs:
