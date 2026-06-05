@@ -13,7 +13,7 @@ jobs:
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
           project_id: 503
-          test_id: 3453
+          suite_id: 478
           profile_id: 1014
           environment: 'QA'
           browser: "webkit"
