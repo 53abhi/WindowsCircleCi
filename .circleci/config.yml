@@ -1,14 +1,13 @@
 version: 2.1
-
 orbs:
   cicd: sedstart/cicd@dev:1
 jobs:
-  run-sedstart-cloud:
+  test:
     docker:
       - image: cimg/node:25.2.1
     steps:
       - cicd/runcloud:    
-          api_key: SEDSTART_API_KEY     
+          api_key: SEDSTART_API_KEY      
           project_id: 750
           test_id: 8500
           profile_id: 1358
@@ -17,4 +16,4 @@ jobs:
 workflows:
   test-workflow:
     jobs:
-      - run-sedstart-cloud
+      - test
