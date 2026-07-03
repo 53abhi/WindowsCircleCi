@@ -15,7 +15,6 @@ jobs:
           api_key: SEDSTART_API_KEY
           project_id: 750
           test_id: 8526
-          profile_id: 1358
           browser: "chrome"
 
 workflows:
