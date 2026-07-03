@@ -1,23 +1,24 @@
 version: 2.1
- 
+
 orbs:
   sedstart: sedstart/cicd@1.0.0
- 
+
 jobs:
-  run-sedstart-local-mac:
-    macos:
-      xcode: 16.4.0
-    resource_class: m4pro.medium
+   run-sedstart-local-windows:
+    resource_class: 'windows.medium'
+    machine:
+      image: "windows-server-2022-gui:current"
+      shell: "powershell.exe -ExecutionPolicy Bypass"
     steps:
       - checkout
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
           project_id: 750
-          suite_id: 844
-          profile_id: 000
+          test_id: 8526
+          profile_id: 1358
           browser: "chrome"
- 
+
 workflows:
   test-workflow:
     jobs:
-      - run-sedstart-local-mac
+      - run-sedstart-local-windows
