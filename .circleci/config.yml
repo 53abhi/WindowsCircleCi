@@ -9,8 +9,7 @@ jobs:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
           project_id: 750
-          suite_id: 844
-          profile_id: 000
+          suite_id: 716
           browser: chrome
           headless: true
 workflows:
