@@ -11,7 +11,7 @@ jobs:
           api_key: SEDSTART_API_KEY     
           project_id: 750
           suite_id: 843
-          profile_id: 
+          profile_id: 00
           browser: chrome
           headless: true
 workflows:
