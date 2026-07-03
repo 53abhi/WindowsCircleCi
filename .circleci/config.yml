@@ -12,8 +12,8 @@ jobs:
       - checkout
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
-          project_id: 000
-          suite_id: 844
+          project_id: 750
+          suite_id: 
           profile_id: 1358
           browser: "webkit"
  
