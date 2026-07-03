@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  cicd: sedstart/cicd@dev:1
+  cicd: sedstart/cicd@1.0.0
 jobs:
   test:
     docker:
