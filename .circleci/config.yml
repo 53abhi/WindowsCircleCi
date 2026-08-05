@@ -8,10 +8,11 @@ jobs:
     steps:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
-          project_id: 750
-          suite_id: 716
+          project_id: 644
+          test_id: 4077
           browser: chrome
           headless: true
+          environment: "QA"
 workflows:
   test-workflow:
     jobs:
