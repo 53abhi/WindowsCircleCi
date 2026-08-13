@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  cicd: sedstart/cicd@1.0.0
+  cicd: sedstart/cicd@1.0.1
 jobs:
   test:
     docker:
@@ -8,8 +8,9 @@ jobs:
     steps:
       - cicd/runlocal:    
           api_key: SEDSTART_API_KEY      
-          project_id: 644
-          test_id: 4077
+          project_id: 514
+          test_id: 3691
+          profile_id: 1094
           browser: chrome
           headless: true
           environment: "QA"
