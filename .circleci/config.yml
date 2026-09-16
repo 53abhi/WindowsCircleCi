@@ -13,8 +13,8 @@ jobs:
       - sedstart/runlocal:
           api_key: SEDSTART_API_KEY
           project_id: 1272
-          test_id: 11621
-          profile_id: 2230
+          test_id: 11622
+          profile_id: 2232
           browser: "chrome"
  
 workflows:
